@@ -1,0 +1,128 @@
+![MSW](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/91794090-3af4-44e4-a987-7aab365e0ac6/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220921T010242Z&X-Amz-Expires=86400&X-Amz-Signature=7b9fc0afeec9a5faa3a3e31da74b0d616c34abe85ce2b68b09a288e41dbad17f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.png%22&x-id=GetObject)
+
+# ❤MSW 프로젝트 소개
+
+**국군 장병들의 신속한 상황 파악을 위한 스마트워치와 이를 활용한 부대 인원 관리 웹 플랫폼**
+- 부대별 생활관 인원 현황 확인의 어려움을 극복
+- 각 시설 이용/출입시 출입비콘의 활용
+- 스마트워치로 각종 데이터 수신 및 송신하여 사용자는 편의 제공을 관리자는 웹으로 쉽게 인원 확인/관리 할 수 있음
+
+
+
+
+# 💡기능 설명
+
+### 웹 플랫폼
+
+- 관리자 로그인/로그아웃 기능
+- 인원 현황 대시보드
+    - 각 병사 위치 확인 (출근, 퇴근, 격리, 시설이용 등)
+    - 휴가 및 외출 인원(군번, 출타시간, 휴가기간 등)
+    - 각 부대 전력 시각화 (훈련/실제상황 발생시 심박수 데이터로 실시간 인원 확인)
+- 전달 사항 / 특이사항
+- 전시 상황시 지휘체계 / 스마트워치의 기능으로 부대별 인원 확인
+
+### 클라우드
+
+- 쿠버네티스 / 도커
+- 웹서버(NodeJS) 및 데이터베이스(MongoDB), 아두이노 IDE 소켓 통신 구축
+- 네트워크 구성
+
+### Iot(아두이노)
+스마트워치 하드웨어 구성(심박수, NFC, 디스플레이, 배터리, 보드 등) → 최대한 스마트워치 디자인
+RFID/NFC 리더기(보드, RFID,NFC 리더) → 가능하다면 공군에서 사용하는 리더기처럼 디자인
+
+- **출입리더기**
+1. RFID/NFC 리더 후 웹플랫폼 데이터 전달
+2. 디스플레이(생략가능)
+
+- **스마트워치**
+1. 시계 기능
+2. 심박수기능
+3. NFC/RFID
+4. 특이사항보고
+
+
+
+# 컴퓨터 구성 / 필수 조건 안내(Prerequisites)
+soon
+
+
+# 🔗시스템 구성도
+soon
+
+# 프로젝트 사용법(Getting Started)
+**백엔드 구동**
+/WEB(BE)/backend/ 디렉터리에서
+$ npm run dev
+
+**프론트엔드 구동**
+$ npm run serve
+
+
+# 📖설치 안내(Installation Process)
+```
+**node.js 설치**
+https://nodejs.org/en/
+v16.17.1 설치
+
+**express 설치**
+/WEB(BE)/backend/ 디렉터리에서
+npm install -g express-generator
+express --view=pug backend
+npm install
+
+**nodemon 설치**
+npm install -g nodemon --save-dev
+
+**sqlite 설치**
+/WEB(BE)/backend/ 디렉터리에서
+npm install sqlite3
+
+**vue.js 설치**
+/WEB(FE)/msw/ 디렉터리에서
+npm i @vue/cli-service 
+npm i @vue/cli-plugin-babel 
+npm i @vue/cli-plugin-eslint 
+npm install -g sass-migrator
+npm install vue-router --save
+npm install axios --save
+npm install vuex
+
+```
+
+# ✏기술 스택(Technique Used)
+
+### Infra
+|<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">|<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">|<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">|<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">|
+|:---:|:---:|:---:|:---:|
+
+
+### Front-End
+|<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">|<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">|<img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">|
+|:---:|:---:|:---:|:---:|:---:|
+
+
+### Back-End
+|<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">|<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">|
+|:---:|:---:|:---:|
+
+
+### IoT
+|<img src="https://img.shields.io/badge/arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white">|
+|:---:|
+
+
+
+# 😀팀정보(Team Information)
+
+|이름|역할|E-Mail|Github|
+|:---:|:---:|:---:|:---:|
+|최수호| PM, 프론트/백엔드 개발|snp.sanso@gmail.com|[![Github Badge](https://img.shields.io/badge/Github-181717?style=flat&logo=Github&logoColor=white)](https://github.com/s4nso)
+|윤지성| 클라우드/인프라 개발|silanon65@gmail.com|[![Github Badge](https://img.shields.io/badge/Github-181717?style=flat&logo=Github&logoColor=white)](https://github.com/jise8893)
+|박원| Iot(Arduino) 개발|myself9875@gmail.com|[![Github Badge](https://img.shields.io/badge/Github-181717?style=flat&logo=Github&logoColor=white)](https://github.com/1park)
+
+
+
+# 📜저작권 및 사용권 정보(Copyleft / End User License)
+- [MIT LICENSE](https://github.com/osamhack2022/Web_Iot_Cloud_MND-Smart-Watch_Watchmaker/blob/main/License)
