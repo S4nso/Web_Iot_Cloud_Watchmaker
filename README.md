@@ -1,4 +1,5 @@
 ![MSW](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/91794090-3af4-44e4-a987-7aab365e0ac6/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220921T010242Z&X-Amz-Expires=86400&X-Amz-Signature=7b9fc0afeec9a5faa3a3e31da74b0d616c34abe85ce2b68b09a288e41dbad17f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.png%22&x-id=GetObject)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FS4nso%2FWeb_Iot_Cloud_Watchmaker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FS4nso%2FWeb_Iot_Cloud_Watchmaker?ref=badge_shield)
 
 # ❤MSW 프로젝트 소개
 
@@ -126,3 +127,6 @@ npm install vuex
 
 # 📜저작권 및 사용권 정보(Copyleft / End User License)
 - [MIT LICENSE](https://github.com/osamhack2022/Web_Iot_Cloud_MND-Smart-Watch_Watchmaker/blob/main/License)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FS4nso%2FWeb_Iot_Cloud_Watchmaker.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FS4nso%2FWeb_Iot_Cloud_Watchmaker?ref=badge_large)
